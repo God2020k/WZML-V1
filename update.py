@@ -28,7 +28,6 @@ try:
         log_error(f"CONFIG_FILE_URL: {e}")
 except:
     pass
-
 load_dotenv('config.env', override=True)
 
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO')
@@ -37,7 +36,7 @@ try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
 except:
-    UPSTREAM_REPO = "https://github.com/codewithweeb/mirror-with-weeb"
+    UPSTREAM_REPO = "https://github.com/God2020k/WZML-V1"
 try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
